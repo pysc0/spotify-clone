@@ -79,7 +79,7 @@ function App() {
   const renderTracks = () => {
     return tracks.map(track => (
       <div key={track.id}>
-        {track.images.length ? <img width={"100%"} src={track.images[0].url} alt=""/> : <div>No Image</div>}
+        {track.images.length ? <img width={"250px"} height={"250px"} src={track.images[0].url} alt=""/> : <div>No Image</div>}
       </div>
     ))
   }
