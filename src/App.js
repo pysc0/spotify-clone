@@ -1,6 +1,7 @@
 import { Component, useEffect, useState } from "react";
 import './App.css';
 import axios from 'axios';
+import { render } from "@testing-library/react";
 
 function App() {
   const CLIENT_ID = "b41efec06d664ce38d7b3a98e33050ea"
@@ -32,7 +33,9 @@ function App() {
 
   const logout = () => {
     setToken("")
+    setArtists("")
     window.localStorage.removeItem("token")
+    window.localStorage.removeItem("setArtists")
   }
 
   const searchArtists = async (e) => {
@@ -83,7 +86,7 @@ function App() {
   
 
   return (
-    <div className="flex flex-col items-center bg-black w-full justify-center bg-[#18D860] text-white p-5 rounded-full">
+    <div className="flex flex-col items-center bg-black w-full justify-center bg-[#18D860] text-white p-5 rounded-full tac">
         {!token ?
         <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login to Spotify</a>
         : <button onClick={logout}>Logout</button>}

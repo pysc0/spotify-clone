@@ -1,3 +1,18 @@
+div {
+  text-align: center;
+}
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.tac {
+  text-align: center;
+}
+
 .positionab {
   position: absolute;
 }
