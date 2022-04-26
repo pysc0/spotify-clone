@@ -5,7 +5,7 @@ import { render } from "@testing-library/react";
 
 function App() {
   const CLIENT_ID = "b41efec06d664ce38d7b3a98e33050ea"
-  const REDIRECT_URI = "https://spotify-clone-seven-mauve.vercel.app/"
+  const REDIRECT_URI = "http://localhost:3000"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
 

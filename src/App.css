@@ -74,7 +74,23 @@ h1 {
 }
 
 a {
-  background-color: #282c34;
+  background-color: #4dbd43;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 40px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  color: white;
+ text-decoration: none;
+ transition: all 100ms ease;
+ font-weight: 600;
+
+}
+
+a:hover {
+  background-color: #36862f;
 }
 
 body {
